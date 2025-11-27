@@ -183,18 +183,12 @@ ORGANIZER_EMAIL=organizer@example.com
 ```
 
 ### **Email Templates**
-- **Booking Confirmation**: Sent to user after successful booking
-- **Cancellation Confirmation**: Sent to user after cancellation
-- **Organizer Notification**: Sent to meeting organizer for new bookings
-- **Meeting Reminder**: Optional day-before reminder (future enhancement)
+- **Organizer Notification**: Sent to meeting organizer for new bookings and cancellations
 
 ### **Recommended SMTP Providers**
-- **Brevo** (formerly Sendinblue): Free tier with 300 emails/day
-- **Resend**: Developer-friendly with generous free tier
-- **Mailersend**: Professional features with free allowance
+- **Resend**: Developer-friendly with generous free tier, SMTP and APIKey support, Serverless compatible with Next.js for hiding sensitive credentials
 
 ### **Implementation Requirements**
 - Email notifications for all booking/cancellation actions
 - Professional email templates matching government standards
 - Error handling for email delivery failures
-- Optional: Email queue system for high volume 

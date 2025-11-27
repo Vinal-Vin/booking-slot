@@ -17,32 +17,32 @@ const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
 const timeSlots = [
   // 26 January
-  { date: '2025-01-26', start_time: '14:00', end_time: '15:00' },
-  { date: '2025-01-26', start_time: '15:30', end_time: '16:30' },
+  { date: '2026-01-26', start_time: '14:00', end_time: '15:00' },
+  { date: '2026-01-26', start_time: '15:30', end_time: '16:30' },
 
   // 27 January
-  { date: '2025-01-27', start_time: '14:00', end_time: '15:00' },
-  { date: '2025-01-27', start_time: '15:00', end_time: '16:00' },
+  { date: '2026-01-27', start_time: '14:00', end_time: '15:00' },
+  { date: '2026-01-27', start_time: '15:00', end_time: '16:00' },
 
   // 28 January - Morning
-  { date: '2025-01-28', start_time: '09:00', end_time: '10:00' },
-  { date: '2025-01-28', start_time: '10:00', end_time: '11:00' },
-  { date: '2025-01-28', start_time: '11:00', end_time: '12:00' },
-  { date: '2025-01-28', start_time: '12:00', end_time: '13:00' },
+  { date: '2026-01-28', start_time: '09:00', end_time: '10:00' },
+  { date: '2026-01-28', start_time: '10:00', end_time: '11:00' },
+  { date: '2026-01-28', start_time: '11:00', end_time: '12:00' },
+  { date: '2026-01-28', start_time: '12:00', end_time: '13:00' },
 
   // 28 January - Afternoon
-  { date: '2025-01-28', start_time: '14:00', end_time: '15:00' },
-  { date: '2025-01-28', start_time: '15:00', end_time: '16:00' },
+  { date: '2026-01-28', start_time: '14:00', end_time: '15:00' },
+  { date: '2026-01-28', start_time: '15:00', end_time: '16:00' },
 ];
 
 // Pre-existing booking for Fiji
 const preBookings = [
   {
-    slotDate: '2025-01-26',
+    slotDate: '2026-01-26',
     slotStartTime: '14:00',
     country: 'Fiji',
-    name: 'Fiji Representative',
-    email: 'fiji@pacific.delegation'
+    name: 'Monika',
+    email: 'fijimfaet.11iepatradecommittee@gmail.com'
   }
 ];
 

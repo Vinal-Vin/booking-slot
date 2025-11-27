@@ -158,13 +158,13 @@ export default function Home() {
         <div className="text-center space-y-4 mb-12">
           <div className="flex justify-center items-center gap-2 mb-2">
             <Globe className="h-8 w-8 text-primary" />
-            <h1 className="text-4xl font-bold text-foreground">EU Delegation</h1>
+            <h1 className="text-4xl font-bold text-foreground">11<sup className="text-2xl">th</sup> IEPA Trade Committee Bilateral</h1>
           </div>
           <h2 className="text-2xl font-semibold text-muted-foreground">
             Meeting Slot Booking
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Book your 1-hour meeting slot with the EU delegation for January 26–28, 2025. 
+            Book your 1-hour meeting slot with the EU delegation for January 26–28, 2026. 
             Select an available slot and provide your details to confirm your booking.
           </p>
           <div className="flex items-center justify-center gap-2 mt-4">
@@ -217,7 +217,7 @@ export default function Home() {
             All meetings are 1-hour sessions. Please ensure you arrive on time for your scheduled slot.
           </p>
           <p className="mt-2">
-            For technical support or questions, please contact the meeting organizers.
+            For technical support or questions, please contact the meeting organizer: fijimfaet.11iepatradecommittee@gmail.com.
           </p>
         </div>
       </div>

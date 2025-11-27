@@ -1,5 +1,6 @@
 import { createClient } from '@/utils/supabase/server';
 import { NextRequest, NextResponse } from 'next/server';
+import { sendCancellationNotification } from '@/lib/email/resend-service';
 
 export async function POST(request: NextRequest) {
   try {
@@ -79,7 +80,21 @@ export async function POST(request: NextRequest) {
     }
 
     // TODO: Send cancellation email notification here
-    // await sendCancellationEmail({ name, email, slot });
+    // Send email notification to organizer
+    try {
+      await sendCancellationNotification({
+        name: booking.name,
+        email: booking.email,
+        country: booking.country,
+        date: slot.date,
+        startTime: slot.start_time,
+        endTime: slot.end_time,
+        slotId
+      });
+    } catch (emailError) {
+      console.error('Email notification failed:', emailError);
+      // Don't fail the cancellation if email fails
+    }
 
     return NextResponse.json({
       id: slot.id,

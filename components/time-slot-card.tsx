@@ -105,7 +105,7 @@ export function TimeSlotCard({ slot, onBook, onCancel }: TimeSlotCardProps) {
                 <Button 
                   onClick={() => setShowBookingModal(true)}
                   disabled={isLoading}
-                  className="bg-primary hover:bg-primary/90"
+                  className="bg-green-600 hover:bg-green-700 text-white"
                 >
                   Book
                 </Button>
@@ -113,7 +113,7 @@ export function TimeSlotCard({ slot, onBook, onCancel }: TimeSlotCardProps) {
                 <Button 
                   onClick={() => setShowCancelModal(true)}
                   disabled={isLoading}
-                  variant="outline"
+                  className="bg-red-600 hover:bg-red-700 text-white border-red-600"
                   size="sm"
                 >
                   Cancel
