@@ -154,7 +154,7 @@
           Bilateral Meeting Slot Booking
         </h2>
         <p class="text-muted-foreground max-w-2xl mx-auto">
-          Book your 1-hour meeting slot with the EU delegation for January 26–28, 2026. 
+          Book your 1-hour meeting slot with the EU delegation for January 26–28, 2025. 
           Select an available slot and provide your details to confirm your booking.
         </p>
         <div class="flex items-center justify-center gap-2 mt-4">
