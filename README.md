@@ -1,6 +1,6 @@
 # 🇪🇺 EU Delegation Meeting Booking System
 
-A modern web application for booking 1-hour meeting slots with the EU delegation, built with Next.js, Tailwind CSS, shadcn/ui, and Supabase.
+A modern web application for booking 1-hour meeting slots with the EU delegation, built with **SvelteKit**, **Tailwind CSS**, and **Supabase**.
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ A modern web application for booking 1-hour meeting slots with the EU delegation
 - 🏛️ Professional government-appropriate design
 - 👥 Clear attendee display ("EU – Country" format)
 - 🛡 Secure normalized database with proper foreign keys
-- 🎨 Beautiful UI with Tailwind CSS and shadcn/ui components
+- 🎨 Beautiful UI with Tailwind CSS and custom Svelte components
 - 📱 Fully responsive design
 - ⚡ Real-time slot availability updates
 - 🚀 Ready for deployment on Vercel
@@ -126,7 +126,7 @@ npm run seed
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the booking interface.
+Open [http://localhost:5173](http://localhost:5173) to see the booking interface.
 
 ## 📆 Available Time Slots
 
@@ -150,12 +150,12 @@ The application includes the following predefined slots:
 
 ## 🛠 Technology Stack
 
-- **Frontend**: Next.js 15 (App Router), React 19, TypeScript
-- **Styling**: Tailwind CSS v4, shadcn/ui components
+- **Frontend**: SvelteKit 2.49+ (with Svelte 5.45+), TypeScript
+- **Styling**: Tailwind CSS v4
 - **Database**: Supabase (PostgreSQL) with normalized schema
 - **Authentication**: Supabase Row Level Security
 - **Deployment**: Vercel-ready with serverless functions
-- **Icons**: Lucide React
+- **Icons**: Lucide Svelte
 - **Utilities**: dotenv for environment variables
 
 ## 🔌 API Routes
@@ -179,7 +179,7 @@ The application includes RESTful API endpoints:
 
 ## 🎨 UI Components
 
-The application uses shadcn/ui components for a consistent and professional look:
+The application uses custom Svelte components for a consistent and professional look:
 
 - **Cards**: Display time slots with booking status
 - **Dialogs**: Modal forms for booking and cancellation
@@ -201,8 +201,8 @@ The interface is fully responsive with:
 ```bash
 npm run dev        # Start development server
 npm run build      # Build for production
-npm run start      # Start production server
-npm run lint       # Run ESLint
+npm run preview    # Preview production build
+npm run check      # Run TypeScript and Svelte checks
 npm run seed       # Seed database with time slots
 ```
 
@@ -221,10 +221,10 @@ npm run seed       # Seed database with time slots
 4. **Deploy**: Vercel will automatically build and deploy
 
 The application includes:
-- ✅ Optimized for Vercel Edge Runtime
-- ✅ Serverless API functions
+- ✅ Optimized for serverless deployment
 - ✅ Automatic HTTPS and CDN
 - ✅ Production environment variables
+- ✅ SvelteKit adapter for various platforms
 
 ## 🛠 Troubleshooting
 
@@ -241,8 +241,8 @@ npm run seed
 
 ### **Development Issues**
 ```bash
-# Clear Next.js cache if you encounter build issues
-rm -rf .next
+# Clear SvelteKit cache if you encounter build issues
+rm -rf .svelte-kit
 npm run dev
 
 # Check if all dependencies are installed
@@ -267,11 +267,19 @@ Future versions will include automatic email notifications for:
 
 ## 📝 Changelog
 
-### **v1.0.0** (Current)
+### **v2.0.0** (Current - Svelte Migration)
+- ✅ Migrated from Next.js/React to SvelteKit/Svelte
+- ✅ Converted all React components to Svelte components
+- ✅ Rewrote API routes for SvelteKit
+- ✅ Updated build and development tooling
+- ✅ Maintained all existing functionality
+- ✅ Improved performance with Svelte's reactivity
+
+### **v1.0.0** (Previous)
 - ✅ Normalized database schema (slots + bookings tables)
 - ✅ Complete booking and cancellation workflow
 - ✅ Professional government-appropriate UI
-- ✅ Responsive design with shadcn/ui components
+- ✅ Responsive design with custom components
 - ✅ Real-time availability updates
 - ✅ Input validation and error handling
 - ✅ Attendee display ("EU – Country" format)
@@ -288,7 +296,8 @@ Future versions will include automatic email notifications for:
 
 ### **Development Guidelines**
 - Follow TypeScript best practices
-- Use shadcn/ui components for consistency
+- Use Svelte 5 runes ($state, $derived, $props)
+- Write reusable Svelte components
 - Maintain responsive design patterns
 - Include proper error handling
 - Write meaningful commit messages
